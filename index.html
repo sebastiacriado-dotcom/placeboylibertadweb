@@ -1,4 +1,4 @@
-﻿<html>
+<html>
  <head>
   <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
   <style>
@@ -26,9 +26,16 @@
     text-align: center;
    }
    @media (max-width: 768px) {
+    html, body {
+     width: 100%;
+    }
     body {
      max-width: 100%;
-     min-width: auto;
+     min-width: 100%;
+     padding: 8px;
+    }
+    body::after {
+     display: none;
     }
    }
    figure { margin: 0 auto; }
